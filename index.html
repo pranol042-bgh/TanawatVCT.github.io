@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello My Web!</title>
+    <style>
+        /* This is where the magic happens! */
+        body {
+            /* A beautiful linear gradient background */
+            background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+
+            /* Full screen and no margins */
+            height: 100vh;
+            margin: 0;
+
+            /* Center the text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Set a nice font */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* The text style */
+        h1 {
+            font-size: 6rem; /* Make the text much bigger */
+            color: white;    /* White text color */
+            
+            /* Add a subtle shadow to make the text "pop" */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* The animation for the background */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
 <body>
     <h1>Hello My Web!</h1>
